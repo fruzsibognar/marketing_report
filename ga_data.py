@@ -82,7 +82,8 @@ def get_results(service, profile_id):
 		start_date='2015-09-01', 
 		end_date='today', 
 		metrics='ga:sessions, ga:newUsers, ga:transactions, ga:transactionRevenue', 
-		dimensions='ga:date,ga:channelGrouping,ga:deviceCategory'
+		dimensions='ga:date,ga:channelGrouping,ga:deviceCategory',
+    max_results='10000'
       ).execute()
 
 
